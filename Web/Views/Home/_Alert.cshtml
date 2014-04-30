@@ -1,0 +1,20 @@
+﻿@using LyncStream.QQR.Common;
+@model LyncStream.QQR.Common.SystemMessage
+
+@if (string.IsNullOrWhiteSpace(Model.Message) == false)
+{
+    string alertStyle = string.Empty;
+    switch (Model.MessageType)
+    {
+        case SystemMessageType.Information:
+            alertStyle = "alert-success";
+            break;
+        case SystemMessageType.Error:
+            alertStyle = "alert-error";
+            break;
+        default:
+            break;
+    }
+                
+    <div class="@string.Format("alert {0}", alertStyle)">@Model.Message</div>                         
+}

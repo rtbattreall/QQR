@@ -1,0 +1,31 @@
+﻿@model System.Web.Mvc.HandleErrorInfo
+
+@{
+    ViewBag.Title = "Error";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Navigation
+{
+    @Html.Partial("_Navigation", string.Empty)
+}
+
+<section class="main interior">
+    <div class="container">
+        <div class="sixteen columns">
+            @{string errorMessage = "Sorry, An error occurred when processing your request. Please try again.";}
+            @if(Model != null
+                && Model.Exception != null
+                && string.IsNullOrWhiteSpace(Model.Exception.Message) == false)
+            {
+                  @Model.Exception.Message
+            }
+            else
+            {
+                @errorMessage<br />
+            }
+            
+            If you continue to experience issues please <a href='~/Home/ContactUs'>contact us</a>.                       
+        </div>
+    </div>
+</section>

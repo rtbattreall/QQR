@@ -1,0 +1,76 @@
+﻿@model LyncStream.QQR.Web.Models.ContactUsViewModel
+
+
+@{
+    ViewBag.Title = "ContactUs";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section scripts
+{
+    @Scripts.Render("~/Scripts/qqr.contactus.js")
+    @Styles.Render("~/Content/Themes/base/minified/jquery-ui.min.css")
+}
+
+@section Navigation
+{
+    @Html.Partial("_Navigation", "ContactUs")
+}
+
+<section class="main interior">
+    <div class="container">
+        <div class="ten columns">
+            @Html.Partial("_Alert", Model.SystemMessage)
+
+            @using (Html.BeginForm("ContactUs", "Home", FormMethod.Post, new { id = "frm-contactus" }))
+            {
+                @Html.ValidationMessageFor(m => m.Message)
+                @Html.LabelFor(m => m.Message, "Message*", new { @class = "required" })
+                @Html.TextAreaFor(m => m.Message, new { id = "txt-contact-message", @class = "text-box multi-line" })
+               
+                @Html.ValidationMessageFor(m => m.Name)
+                @Html.LabelFor(m => m.Name, "Name*", new { @class = "required" })
+                @Html.TextBoxFor(m => m.Name, new { id = "txt-contact-name" })
+                
+                @Html.ValidationMessageFor(m => m.CompanyName)
+                @Html.LabelFor(m => m.CompanyName, "Company Name*")
+                @Html.TextBoxFor(m => m.CompanyName, new { id = "txt-contact-companyname" })
+
+                @Html.ValidationMessageFor(m => m.Email)
+                @Html.LabelFor(m => m.Email, "Email*", new { @class = "required" })
+                @Html.TextBoxFor(m => m.Email, new { id = "txt-contact-email" })
+                
+                <button type="submit" id="btn-contact-submit">Submit</button>
+                <button type="button" id="btn-contact-reset">Reset</button>
+            }
+
+        </div>
+        <aside class="six columns">
+            <div class="home-aside">
+                <h4>Quinn's Reporting, Ltd.</h4>
+                <dl class="contact-info">
+                    <dt></dt>
+                    <dd>5706 S. 185 Street</dd>
+                    <dd>Omaha, NE 68135-1712</dd>
+                    <br />
+                </dl>
+                <hr />
+
+                <h4>Need Assistance?</h4>
+                <br />
+                <dl class="contact-info">
+                    <dt><strong>email:</strong></dt>
+                    <dd><a href="mailto:contact@quinnsreporting.com">contact@quinnsreporting.com</a></dd>
+                    <br />
+                    <dt><strong>telephone:</strong></dt>
+                    <dd>402.895.5066</dd>
+                    <br />
+                    <dt><strong>fax:</strong></dt>
+                    <dd>402.894.1804</dd>
+                    <br />
+                </dl>
+            </div>
+        </aside>
+    </div>
+</section>
+

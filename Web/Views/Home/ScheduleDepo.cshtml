@@ -1,0 +1,113 @@
+﻿@model LyncStream.QQR.Web.Models.ScheduleViewModel
+
+@{
+    ViewBag.Title = "ScheduleDepo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section scripts
+{
+    @Scripts.Render("~/Scripts/jquery/jquery-ui-datetimepicker.js")
+    @Scripts.Render("~/Scripts/qqr.schedule.js")
+    @Styles.Render("~/Content/Themes/base/minified/jquery-ui.min.css")
+    @Styles.Render("~/Content/Themes/base/minified/jquery.ui.datepicker.min.css")
+    @Styles.Render("~/Content/Themes/base/minified/jquery.ui.slider.min.css")
+    @Styles.Render("~/Content/Themes/base/jquery.ui.datetimepicker.css")
+}
+
+@section Navigation
+{
+    @Html.Partial("_Navigation", "ScheduleDepo")
+}
+
+<section class="main interior">
+    <div class="container">
+        <div class="ten columns">
+            @Html.Partial("_Alert", Model.SystemMessage)
+        </div>
+    </div>
+    <div class="container">
+        @using (Html.BeginForm("ScheduleDepo", "Home", FormMethod.Post, new { id = "frm-scheduledepo", enctype = "multipart/form-data" }))
+        {<div class="one-third column">
+            <h5>Contact Information</h5>
+
+            @Html.ValidationMessageFor(m => m.AttorneyName)
+            @Html.LabelFor(m => m.AttorneyName, "Name of Attorney*", new { @class = "required" })
+            @Html.TextBoxFor(m => m.AttorneyName, new { id = "txt-schedule-attorneyname" })
+
+            @Html.ValidationMessageFor(m => m.PhoneNumber)
+            @Html.LabelFor(m => m.PhoneNumber, "Phone Number*", new { @class = "required" })
+            @Html.TextBoxFor(m => m.PhoneNumber, new { id = "txt-schedule-phonenumber" })
+
+            @Html.ValidationMessageFor(m => m.ContactName)
+            @Html.LabelFor(m => m.ContactName, "Contact Name*", new { @class = "required" })
+            @Html.TextBoxFor(m => m.ContactName, new { id = "txt-schedule-contactname" })
+
+            @Html.ValidationMessageFor(m => m.Email)
+            @Html.LabelFor(m => m.Email, "Email*", new { @class = "required" })
+            @Html.TextBoxFor(m => m.Email, new { id = "txt-schedule-email" })
+
+            <h5>Delivery Requirements</h5>
+            @Html.ValidationMessageFor(m => m.TurnaroundTimeValue)
+            @Html.LabelFor(m => m.TurnaroundTimeValue, "Turnaround Time*", new { @class = "required" })
+            @Html.DropDownListFor(m => m.TurnaroundTimeValue, new SelectList(Model.TurnaroundTime, "Value", "Key"), new { id = "ddl-schedule-turnaroundtime" })
+
+            @Html.LabelFor(m => m.DeliveryComments, "Additional Information or Comments")
+            @Html.TextAreaFor(m => m.DeliveryComments, new { id = "txt-schedule-deliverycomments", @class = "text-box multi-line" })
+
+
+            <button type="submit" id="btn-schedule-submit">Submit</button>
+            <button type="button" id="btn-schedule-reset">Reset</button>
+        </div>    
+            				 
+            <div class="one-third column">
+
+                <h5>Deposition Information</h5>
+                @Html.ValidationMessageFor(m => m.DepoDateTime)
+                @Html.LabelFor(m => m.DepoDateTime, "Date/Time*", new { @class = "required" })
+                @Html.TextBoxFor(m => m.DepoDateTime, new { id = "txt-schedule-datetime" })
+
+                @Html.ValidationMessageFor(m => m.EstimatedTimeValue)
+                @Html.LabelFor(m => m.EstimatedTimeValue, "Estimated length of deposition/trial*", new { @class = "required" })
+                @Html.DropDownListFor(m => m.EstimatedTimeValue, new SelectList(Model.EstimatedTime, "Value", "Key"), new { id = "ddl-schedule-estimatedtime" })
+
+                @Html.ValidationMessageFor(m => m.PlaceofTrial)
+                @Html.LabelFor(m => m.PlaceofTrial, "Place of Deposition/Trial*", new { @class = "required" })
+                @Html.TextBoxFor(m => m.PlaceofTrial, new { id = "txt-schedule-placeoftrial" })
+
+                @Html.ValidationMessageFor(m => m.Address)
+                @Html.LabelFor(m => m.Address, "Address*", new { @class = "required" })
+                @Html.TextBoxFor(m => m.Address, new { id = "txt-schedule-address" })
+
+                @Html.ValidationMessageFor(m => m.City)
+                @Html.LabelFor(m => m.City, "City*", new { @class = "required" })
+                @Html.TextBoxFor(m => m.City, new { id = "txt-schedule-city" })
+
+                @Html.ValidationMessageFor(m => m.StateValue)
+                @Html.LabelFor(m => m.StateValue, "State*", new { @class = "required" })
+                @Html.DropDownListFor(m => m.StateValue, new SelectList(Model.State, "Value", "Key"), new { id = "ddl-schedule-state" })
+
+                @Html.LabelFor(m => m.Video, "Video")
+                @Html.RadioButtonFor(m => m.Video, "Yes", new { id = "rdb-schedule-video1" }) Yes
+                @Html.RadioButtonFor(m => m.Video, "No", new { id = "rdb-schedule-video2", @checked = "checked" }) No
+                <br />
+                <br />
+                @Html.Label("Attach File")
+                <input type="file" name="file" id="btn-schedule-file" />
+
+            </div>          
+        }
+        <aside>
+            <div class="one-third column">
+                <div class="home-aside">
+                    <h4>Disclaimer</h4>
+                    <p>We know that cancellations happen. Please notify us of your change of plans as soon as possible. We are always happy to reschedule at your convenience. Cancellation fees may apply with cancellation of confirmed appointments less than 24 hours prior to scheduled service.</p>
+                    <p>We provide this service as a convenience to our customers; however, this form does not confirm your appointment.</p>
+                    <p>Your appointment has not been confirmed until you have been contacted by phone or email.</p>
+                    <hr />
+                </div>
+            </div>
+        </aside>
+    </div>
+
+</section>

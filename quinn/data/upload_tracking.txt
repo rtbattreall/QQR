@@ -1,0 +1,23 @@
+ID	CID	file_name	file_size	mime_type	upload_date	status	comments
+39181	76	Perez-Jessie 03-17-11.doc	182784		2011-03-29 13:01:36	Sent 3/29/sjb	Here is the report on Jessie Perez.
+38706	76	Vavra Ronald 12-29-10.doc	362496		2011-02-11 16:25:24	sent 2-11/djw	
+38622	76	Eckert Joshua 12-16-10.doc	244224		2011-02-05 13:44:08	sent 2-5/djw	
+39880	76	Speck-Jerry 04-19-11.doc	619520		2011-05-28 11:20:47	sent 5-28-11sjb	sent 5-28-11/sjb
+38849	76	Eckert Joshua 02-17-11.doc	139776		2011-02-24 17:18:31		Joshua Eckert report 2/17/2011
+44265	76	Stoklasa-Marilyn 08-21-12.doc	344064		2012-08-21 20:33:36	sent 08-21-12 sjb	sent 08-21-12
+44266	76	Feyzuloff-Rasid 09-03-12.doc	332800		2012-09-03 09:34:03	sent 09-03-12 sjb	sent 09-03-12
+44267	76	Foster-Larry 10-29-12.doc	98304		2012-10-28 08:26:41	sent 10-28-12 sjb	sent 10-28-12
+44268	76	Havranek-Stormie 10-29-12.doc	160256		2012-10-28 08:27:19	sent 10-28-12 sjb	sent 10-28-12 sjb
+44269	76	Peterson-Rick 06-18-12.doc	54272		2012-11-27 21:17:44		This report is only not finished but sending until dictation is completed.  sjb 11-28-12
+44270	76	Sobota-Kristi 11-28-12.doc	246272		2012-11-27 21:18:39	sent 11-28-12 sjb	
+41060	76	Gebert-Craig 08-17-11.doc	136704		2011-09-15 21:05:32	sent 09/15/11	
+40069	76	Warrings-Andrew 06-13-11.doc	229888		2011-06-14 20:03:43	sent 06-14-11 sjb	
+35504	76	Havranek Stormie 04-15-10.doc	145920		2010-05-07 08:38:11	sent 5-7/djw	
+35495	43	eleven19.png	85686		2010-05-06 12:44:30		Test Upload
+44055	76	Swanson-Ben 06-18-12.doc	252416		2012-06-16 09:38:31	06-18-12 sjb	sent 06-16-12
+44056	76	Clark-Daniel  06-18-12.doc	106496		2012-06-16 09:39:27	sent 06-18-12 sjb	
+44129	76	Trusler-Larry 06-22-12.doc	188416		2012-06-23 10:18:08	sent 06-23-12 sjb	sent 06-23-12 sjb
+42824	76	McKinzie-Sean 02-23-12.doc	282624		2012-02-22 20:43:19	sent 02-12-12 sjb	sent 02-22-12 sjb
+42217	76	Taber-Thomas 01-03-12.doc	199680		2012-01-02 09:06:24		sent 01-02-12 sjb
+42444	76	Hoffman-Robert 01-20-12.doc	722432		2012-01-21 11:51:58		sent 01-21-12 sjb
+42069	76	Arnott-Scobie 07-27-11.doc	427520		2011-12-17 13:27:23	sent 12-17-11 sjb	

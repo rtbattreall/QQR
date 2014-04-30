@@ -1,0 +1,132 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="LyncStream.QQR.Logic.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ContactSubject" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Contact Request</Value>
+    </Setting>
+    <Setting Name="ContactBody" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;!DOCTYPE html&gt;
+&lt;!--[if lt IE 7]&gt;      &lt;html class="no-js lt-ie9 lt-ie8 lt-ie7"&gt; &lt;![endif]--&gt;
+&lt;!--[if IE 7]&gt;         &lt;html class="no-js lt-ie9 lt-ie8"&gt; &lt;![endif]--&gt;
+&lt;!--[if IE 8]&gt;         &lt;html class="no-js lt-ie9"&gt; &lt;![endif]--&gt;
+&lt;!--[if gt IE 8]&gt;&lt;!--&gt;
+&lt;html class="no-js"&gt;
+&lt;!--&lt;![endif]--&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"&gt;
+    &lt;title&gt;Schedule Request&lt;/title&gt;
+    &lt;meta name="description" content=""&gt;
+    &lt;meta name="viewport" content="width=device-width"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!--[if lt IE 7]&gt;
+            &lt;p class="chromeframe"&gt;You are using an &lt;strong&gt;outdated&lt;/strong&gt; browser. Please &lt;a href="http://browsehappy.com/"&gt;upgrade your browser&lt;/a&gt; or &lt;a href="http://www.google.com/chromeframe/?redirect=true"&gt;activate Google Chrome Frame&lt;/a&gt; to improve your experience.&lt;/p&gt;
+        &lt;![endif]--&gt;
+    &lt;!--[if lt IE 9]&gt;
+			&lt;script src="http://html5shim.googlecode.com/svn/trunk/html5.js"&gt;&lt;/script&gt;
+		&lt;![endif]--&gt;
+    &lt;!--[if gte IE 9]&gt;
+
+    &lt;link href="http://qqr.lyncpost.com/Content/Custom/notie9.css" rel="stylesheet" /&gt;
+		  	
+		&lt;![endif]--&gt;
+    &lt;p&gt;{0} from {1} has requested to be contacted.  They can be contacted by email at {2}. Please see the below message for more details.&lt;/p&gt;
+    &lt;p&gt;{3}&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</Value>
+    </Setting>
+    <Setting Name="ContactToAddress" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">info@quinnsreporting.com</Value>
+    </Setting>
+    <Setting Name="ScheduleSubject" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Schedule Request</Value>
+    </Setting>
+    <Setting Name="ScheduleBody" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&lt;!DOCTYPE html&gt;
+&lt;!--[if lt IE 7]&gt;      &lt;html class="no-js lt-ie9 lt-ie8 lt-ie7"&gt; &lt;![endif]--&gt;
+&lt;!--[if IE 7]&gt;         &lt;html class="no-js lt-ie9 lt-ie8"&gt; &lt;![endif]--&gt;
+&lt;!--[if IE 8]&gt;         &lt;html class="no-js lt-ie9"&gt; &lt;![endif]--&gt;
+&lt;!--[if gt IE 8]&gt;&lt;!--&gt;
+&lt;html class="no-js"&gt;
+&lt;!--&lt;![endif]--&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"&gt;
+    &lt;title&gt;Schedule Request&lt;/title&gt;
+    &lt;meta name="description" content=""&gt;
+    &lt;meta name="viewport" content="width=device-width"&gt;
+    
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!--[if lt IE 7]&gt;
+            &lt;p class="chromeframe"&gt;You are using an &lt;strong&gt;outdated&lt;/strong&gt; browser. Please &lt;a href="http://browsehappy.com/"&gt;upgrade your browser&lt;/a&gt; or &lt;a href="http://www.google.com/chromeframe/?redirect=true"&gt;activate Google Chrome Frame&lt;/a&gt; to improve your experience.&lt;/p&gt;
+        &lt;![endif]--&gt;
+    &lt;!--[if lt IE 9]&gt;
+			&lt;script src="http://html5shim.googlecode.com/svn/trunk/html5.js"&gt;&lt;/script&gt;
+		&lt;![endif]--&gt;
+    &lt;!--[if gte IE 9]&gt;
+		
+		&lt;![endif]--&gt;   
+
+   
+                &lt;p&gt;{0} from {1} has requested to schedule a deposition.  Please see the below message for more details.&lt;/p&gt;
+
+                &lt;h3&gt;Contact Information&lt;/h3&gt;
+
+                &lt;label&gt;Name of Attorney&lt;/label&gt;&lt;br/&gt;
+                &lt;label&gt;{1}&lt;/label&gt;&lt;br/&gt;&lt;br/&gt;
+
+                &lt;label&gt;Phone Number&lt;/label&gt;&lt;br/&gt;
+                &lt;label&gt;{2}&lt;/label&gt;&lt;br/&gt;&lt;br/&gt;
+
+                &lt;label&gt;Contact Name&lt;/label&gt;&lt;br/&gt;
+                &lt;label&gt;{0}&lt;/label&gt;&lt;br/&gt;&lt;br/&gt;
+
+                &lt;label&gt;Email&lt;/label&gt;&lt;br/&gt;
+                &lt;label&gt;{3}&lt;/label&gt;&lt;br/&gt;&lt;br/&gt;                
+
+                &lt;h3&gt;Delivery Requirements&lt;/h3&gt;
+                &lt;label&gt;Turnaround Time&lt;/label&gt;&lt;br/&gt;
+                &lt;label&gt;{4}&lt;/label&gt;&lt;br/&gt;&lt;br/&gt;
+
+                &lt;label&gt;Additional Information or Comments&lt;/label&gt;&lt;br/&gt;
+                &lt;label&gt;{5}&lt;/label&gt;&lt;br/&gt;&lt;br/&gt;
+
+                &lt;h3&gt;Deposition Information&lt;/h3&gt;
+                &lt;label&gt;Date/Time&lt;/label&gt;&lt;br/&gt;
+                &lt;label&gt;{6}&lt;/label&gt;&lt;br/&gt;&lt;br/&gt;
+
+                &lt;label&gt;Estimated length of deposition/trial&lt;/label&gt;&lt;br/&gt;
+                &lt;label&gt;{7}&lt;/label&gt;&lt;br/&gt;&lt;br/&gt;
+
+                &lt;label&gt;Place of Deposition/Trial&lt;/label&gt;&lt;br/&gt;
+                &lt;label&gt;{8}&lt;/label&gt;&lt;br/&gt;&lt;br/&gt;
+
+                &lt;label&gt;Address&lt;/label&gt;&lt;br/&gt;
+                &lt;label&gt;{9}&lt;/label&gt;&lt;br/&gt;&lt;br/&gt;
+
+                &lt;label&gt;City&lt;/label&gt;&lt;br/&gt;
+                &lt;label&gt;{10}&lt;/label&gt;&lt;br/&gt;&lt;br/&gt;
+
+                &lt;label&gt;State&lt;/label&gt;&lt;br/&gt;
+                &lt;label&gt;{11}&lt;/label&gt;&lt;br/&gt;&lt;br/&gt;
+
+                &lt;label&gt;Video&lt;/label&gt;&lt;br/&gt;
+                &lt;label&gt;{12}&lt;/label&gt;&lt;br/&gt;&lt;br/&gt;
+
+                &lt;label&gt;File Attached&lt;/label&gt;&lt;br/&gt;
+                &lt;label&gt;{13}&lt;/label&gt;&lt;br/&gt;  
+
+&lt;/body&gt;
+&lt;/html&gt;
+</Value>
+    </Setting>
+    <Setting Name="ScheduleToAddress" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">rtbattreall@cox.net</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

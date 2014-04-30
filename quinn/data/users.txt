@@ -1,0 +1,16 @@
+ID	CID	login_name	password	type
+1	NULL	quinn	ee8d2fb6937b48487775a8bef5e3529d	A
+480	76	Sheila-Horrocks	acd51d9af5dcff35f08cbce283aadb3b	C
+463	76	kaye-horrocks	6ef1709a1f4459b96e3f0c550cfbaf17	C
+137	NULL	andre	a329eba81c54505bfe21fadcac6c2e2e	A
+222	43	eleven19	77a351e585a4406e734071a334a3f7b7	C
+438	43	lethalpig	a329eba81c54505bfe21fadcac6c2e2e	C
+371	70	vicky-2vandervort	fa3060edb66e6ff4507886f9912e1ab9	C
+374	70	diane-2vandervort	4ff9fc6e4e5d5f590c4f2134a8cc96d1	C
+373	69	diane-1vandervort	4ff9fc6e4e5d5f590c4f2134a8cc96d1	C
+431	76	horrocks-wendie	00ddf4aa11ab67b4e46370d9dae152d6	C
+370	69	bob-1vandervort	a6ebe407fa6e2337cb2deb573d17791e	C
+400	76	horrocks-horrocks	9b306ab04ef5e25f9fb89c998a6aedab	C
+401	76	Diane-Horrocks	40687c8206d15373954d8b27c6724f62	C
+402	76	Horrocks-Christy	5b934104d392ba8092f405b825742516	C
+404	43	asimones	a329eba81c54505bfe21fadcac6c2e2e	C

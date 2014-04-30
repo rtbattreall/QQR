@@ -1,0 +1,9 @@
+﻿.input-validation-error
+{
+    border: 1px solid #ff0000 !important;
+    background-color: #ffeeee !important;
+}
+
+.field-validation-error {
+    color: #ff0000;
+}

@@ -1,0 +1,39 @@
+<STYLE type="text/css">
+
+/* CSS File for IE4+ PC */
+
+
+
+/* Styles for copy */
+
+BODY {font: small verdana, arial, geneva; background-color: #660000; color: #000000}
+BODY {font: small verdana, arial, geneva; background-color: #660000; color: #000000}
+
+A:hover {color: #FFCC00}
+A:active {color: #FF9999}
+
+
+
+P {font: small verdana, arial, geneva; color: #000000; font-weight: 400}
+
+.text {font: small verdana, arial, geneva; color: #000000; font-weight: 400}
+
+.title {font: medium verdana, arial, geneva; color: #660000; font-weight: 700}
+
+.small {font: x-small verdana, arial, geneva; color: #000000; font-weight: 400}
+
+.smallnav {font: x-small verdana, arial, geneva; color: #660000; font-weight: 400; text-decoration: none}
+
+.smallnav2 {font: x-small verdana, arial, geneva; color: #FF9999; font-weight: 400; text-decoration: none}
+
+.smallnavpipe {font: x-small verdana, arial, geneva; color: #FFFFCC; font-weight: 400; text-decoration: none}
+
+.smallnav22 {font: small verdana, arial, geneva; color: #FF9999; font-weight: 700; text-decoration: none}
+
+.smallnavpipe2 {font: small verdana, arial, geneva; color: #FFFFCC; font-weight: 700; text-decoration: none}
+
+TD {vertical-align: top; font: small verdana, arial, geneva; color: #000000; font-weight: 400}
+
+.link {color: #660000}
+
+</STYLE>

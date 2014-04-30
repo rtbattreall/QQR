@@ -1,0 +1,37 @@
+<STYLE>
+
+/* CSS File for N4 Mac */
+
+
+
+/* Styles for Body copy */
+
+BODY {font: medium verdana, arial, geneva; background-color: #660000; color: #000000}
+BODY {font: medium verdana, arial, geneva; background-color: #660000; color: #000000}
+
+A:hover {color: #FFCC00}
+A:active {color: #FF9999}
+
+
+
+P {font: medium verdana, arial, geneva; color: #000000; font-weight: 400}
+
+.text {font: medium verdana, arial, geneva; color: #000000; font-weight: 400}
+
+.title {font: large verdana, arial, geneva; color: #660000; font-weight: 700}
+
+.small {font: small verdana, arial, geneva; color: #000000; font-weight: 400}
+
+.smallnav {font: small verdana, arial, geneva; color: #660000; font-weight: 400; text-decoration: none}
+
+.smallnav2 {font: small verdana, arial, geneva; color: #FF9999; font-weight: 400; text-decoration: none}
+
+.smallnav8 {font: small verdana, arial, geneva; color: #000099; font-weight: 400}
+
+.smallnavpipe {font: small verdana, arial, geneva; color: #FFFFCC; font-weight: 400; text-decoration: none}
+
+TD {vertical-align: top; font: medium verdana, arial, geneva; color: #000000; font-weight: 400}
+
+.link {color: #660000}
+
+</STYLE>
