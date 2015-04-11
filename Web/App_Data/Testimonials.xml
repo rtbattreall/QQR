@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Testimonials>
+  <Testimonial>
+    <Quote>Fantastic product, my sites all run super fast and the support is excellent!</Quote>
+    <Name>Jane Park</Name>
+    <CompanyName>Julep Entrepreneur</CompanyName>
+  </Testimonial>
+  <Testimonial>
+    <Quote>Every time my business gained a big feature in the past, our site would crash. Two months ago, when I heard that we would be featured on CNN’s small business section, I nearly had a heart attack. Scrambling, I looked for a way to upgrade my hosting and migrate my site painlessly; any downtime for me can result in thousands in lost revenue.</Quote>
+    <Name>Bryan Povlinski</Name>
+    <CompanyName>Fifth Gear</CompanyName>
+  </Testimonial>
+</Testimonials> 

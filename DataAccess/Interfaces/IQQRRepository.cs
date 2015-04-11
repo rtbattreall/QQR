@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using LyncStream.QQR.Common;
 
 namespace LyncStream.QQR.DataAccess
 {
@@ -11,5 +8,6 @@ namespace LyncStream.QQR.DataAccess
         List<KeyValuePair<string, string>> SelectTurnAroundTimes();
         List<KeyValuePair<string, string>> SelectTrialLengths();
         List<KeyValuePair<string, string>> SelectStates();
+        Testimonials SelectTestimonials(string filePath);
     }
 }

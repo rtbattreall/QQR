@@ -34,6 +34,12 @@ namespace LyncStream.QQR.Web.Controllers
             return View();
         }
 
+        public ActionResult Testimonial()
+        {
+            var model = new TestimonialViewModel();
+            return View(model.CreateModel(Server.MapPath("~/App_Data/Testimonials.xml")));
+        }
+
         public ActionResult ScheduleDepo()
         {
             return View(new ScheduleViewModel());
@@ -105,8 +111,7 @@ namespace LyncStream.QQR.Web.Controllers
                 }
                 catch(Exception ex)
                 {
-                    model.SystemMessage.Message = ex.Message;
-                    //model.SystemMessage.Message = @"There was a problem submitting you contact request. Please try again.";
+                    model.SystemMessage.Message = ex.Message;                    
                     model.SystemMessage.MessageType = SystemMessageType.Error;
                     return View(model);
                 }

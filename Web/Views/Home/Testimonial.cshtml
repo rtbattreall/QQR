@@ -1,0 +1,42 @@
+﻿@model List<LyncStream.QQR.Web.Models.TestimonialViewModel>
+
+@{
+    ViewBag.Title = "Testimonial";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Navigation
+{
+    @Html.Partial("_Navigation", "Testimonial")
+}
+
+
+<section class="main interior">
+    <div class="container">
+        <div class="sixteen columns">
+            <h2>Testimonials</h2>
+            <p>
+                See what people have to say abouy us.
+            </p>
+
+        </div>
+
+        <div class="sixteen column">
+            @foreach (var testimonial in Model)
+            {   
+                <blockquote>
+                    <h5>@string.Format("{0} of {1}", testimonial.Name, testimonial.CompanyName)</h5>
+                    <p>@testimonial.Quote</p>
+                </blockquote>
+            }
+        </div>
+
+        <div class="sixteen columns">            
+            <p>
+                Want to share you own testimonial.  Visit our  <a href="~/Home/ContactUs">contact us</a> page.
+            </p>
+
+        </div>
+    </div>
+
+</section>

@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using LyncStream.QQR.Common;
 using LyncStream.QQR.DataAccess;
 
 namespace LyncStream.QQR.Logic
@@ -33,6 +30,12 @@ namespace LyncStream.QQR.Logic
         public List<KeyValuePair<string, string>> GetStates()
         {
             return QQRRepository.SelectStates();
+        }
+
+        public List<Testimonial> GetTestimonials(string filePath)
+        {
+            var test = QQRRepository.SelectTestimonials(filePath);
+            return QQRRepository.SelectTestimonials(filePath).TestimonialList;
         }
     }
 }

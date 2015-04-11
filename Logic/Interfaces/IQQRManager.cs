@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using LyncStream.QQR.Common;
 
 namespace LyncStream.QQR.Logic
 {
@@ -11,5 +8,6 @@ namespace LyncStream.QQR.Logic
         List<KeyValuePair<string, string>> GetTurnAroundTimes();
         List<KeyValuePair<string, string>> GetTrialLengths();
         List<KeyValuePair<string, string>> GetStates();
+        List<Testimonial> GetTestimonials(string filePath);
     }
 }
