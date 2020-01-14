@@ -163,6 +163,7 @@ p {
 }
 
 .site-nav ul li {
+    background: #F5F5F5;
 }
 
 .site-nav ul li a{
@@ -220,6 +221,43 @@ p {
 	-webkit-border-radius: 0px 5px 0px 0px;
     border-radius: 0px 5px 0px 0px;
 	border-width: 0 0 0 1px;
+}
+
+.site-nav > ul li.has-sub {
+    background: #F5F5F5;
+    position: relative;
+}
+.site-nav > ul li.has-sub:hover ul {
+    display: block;
+}
+.site-nav > ul li.has-sub ul {
+    display: none;
+    width: 190px;
+    position: absolute;
+    top: 40px;
+    left: 80px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background: #F5F5F5;
+    border: 1px solid #ece6e8;
+    border-bottom: 3px solid #d9ced2;
+    border-top: 0 none;
+    z-index:1000;
+}
+.site-nav > ul li.has-sub ul li {
+    display: block;
+}
+.site-nav > ul li.has-sub > a {
+    background-image: url('../images/caret.png');
+    background: #F5F5F5;
+    background-repeat: no-repeat;
+    background-position: 90% -95%;
+}
+.site-nav > ul li.has-sub > a.active,
+.site-nav > ul li.has-sub > a:hover {
+    background:#F5F5F5 url('../images/caret.png') no-repeat;
+    background-position: 90% 195%;
 }
 
 

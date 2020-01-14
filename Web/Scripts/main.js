@@ -1,3 +1,5 @@
 $(document).ready(function () {
-    $('.quotes').quovolver();
+    //$('.quotes').quovolver();
+    //$("#menu").menu();
+    $("#menu").show();
 });

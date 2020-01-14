@@ -18,7 +18,9 @@
     @Styles.Render("~/Content/Custom/grid.css")
     @Styles.Render("~/Content/Custom/layout.css")
     @Styles.Render("~/Content/Custom/validation.css")
-    @Scripts.Render("~/Scripts/jquery/modernizr-2.6.2.min.js")
+    @Scripts.Render("~/Scripts/modernizr-2.8.3.js")
+    @Styles.Render("~/Content/Themes/base/jquery-ui.min.css")
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
@@ -67,12 +69,12 @@
 
     @Html.Partial("_Footer");
     
-    @Scripts.Render("~/Scripts/jquery/jquery-1.9.0.min.js")
-    @Scripts.Render("~/Scripts/jquery/jquery-ui-1.10.0.js")
-    @Scripts.Render("~/Scripts/jquery/jquery.quovolver.min.js")
-    <script>window.jQuery || document.write('<script src="Scripts/jquery/jquery-1.9.0.min.js"><\/script>')</script>
-    @Scripts.Render("~/Scripts/jquery/jquery.validate.min.js")
-    @Scripts.Render("~/Scripts/jquery/jquery.validate.unobtrusive.min.js")
+    @Scripts.Render("~/Scripts/jquery-3.4.1.min.js")
+    @Scripts.Render("~/Scripts/jquery-ui-1.12.1.js")
+    <!--@Scripts.Render("~/Scripts/jquery.quovolver.min.js")-->
+    <script>window.jQuery || document.write('<script src="Scripts/jquery-3.4.1.min.js"><\/script>')</script>
+    @Scripts.Render("~/Scripts/jquery.validate.min.js")
+    @Scripts.Render("~/Scripts/jquery.validate.unobtrusive.min.js")
     @Scripts.Render("~/Scripts/main.js")
     @Scripts.Render("~/Scripts/plugins.js")
     @RenderSection("scripts", required: false)

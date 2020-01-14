@@ -1,0 +1,62 @@
+﻿@model string
+
+<nav id="nav" class="site-nav">
+    <ul id="menu">
+        @switch (Model)
+        {
+            case "Home":
+                <li><a class="active first-child" href="/">Home</a></li>
+                <li class="has-sub">
+                    <a href="~/Services/Index">Services</a>
+                    <ul>
+                        <li><a href="~/Services/Index">Home Entertainment</a></li>
+                        <li><a href="~/Services/Index">Car Hifi</a></li>                        
+                    </ul>
+                </li>
+                <li><a href="~/Home/Testimonial">Testimonials</a></li>
+                <li><a href="~/Home/ScheduleDepo">Schedule Depo</a></li>
+                <li><a class="last-child" href="~/Home/ContactUs">Contact Us</a></li>
+                break;
+            case "Services":
+                <li><a class="first-child" href="/">Home</a></li>
+                <li><a class="active" href="~/Services/Index">Services</a></li>
+                <li><a href="~/Home/Testimonial">Testimonials</a></li>
+
+                <li><a href="~/Home/ScheduleDepo">Schedule Depo</a></li>
+                <li><a class="last-child" href="~/Home/ContactUs">Contact Us</a></li>
+                break;
+            case "Testimonial":
+                <li><a class="first-child" href="/">Home</a></li>
+                <li><a href="~/Services/Index">Services</a></li>
+                <li><a class="active" href="~/Home/Testimonial">Testimonials</a></li>
+
+                <li><a href="~/Home/ScheduleDepo">Schedule Depo</a></li>
+                <li><a class="last-child" href="~/Home/ContactUs">Contact Us</a></li>
+                break;
+            case "ScheduleDepo":
+                <li><a class="first-child" href="/">Home</a></li>
+                <li><a href="~/Services/Index">Services</a></li>
+                <li><a href="~/Home/Testimonial">Testimonials</a></li>
+                <li><a class="active" href="~/Home/ScheduleDepo">Schedule Depo</a></li>
+                <li><a class="last-child" href="~/Home/ContactUs">Contact Us</a></li>
+                break;
+            case "ContactUs":
+                <li><a class="first-child" href="/">Home</a></li>
+                <li><a href="~/Services/Index">Services</a></li>
+                <li><a href="~/Home/Testimonial">Testimonials</a></li>
+
+                <li><a href="~/Home/ScheduleDepo">Schedule Depo</a></li>
+                <li><a class="active last-child" href="~/Home/ContactUs">Contact Us</a></li>
+                break;
+            default:
+                <li><a class="first-child" href="/">Home</a></li>
+                <li><a href="~/Services/Index">Services</a></li>
+                <li><a href="~/Home/Testimonial">Testimonials</a></li>
+
+                <li><a href="~/Home/ScheduleDepo">Schedule Depo</a></li>
+                <li><a class="last-child" href="~/Home/ContactUs">Contact Us</a></li>
+                break;
+        }
+    </ul>
+</nav>
+
