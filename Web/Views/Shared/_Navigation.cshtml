@@ -7,28 +7,28 @@
             case "Home":
                 <li><a class="active first-child" href="/">Home</a></li>
                 <li class="has-sub">
-                    <a href="~/Services/Index">Services</a>
+                    <a href="~/Services/Index">Services</a><i class="down"></i>
                     <ul>
-                        <li><a href="~/Services/Index">Home Entertainment</a></li>
-                        <li><a href="~/Services/Index">Car Hifi</a></li>                        
+                        <li><a href="~/Services/CourtReporting">Court Reporting and Interpreting Services</a></li>
+                        <li><a href="~/Services/Index">Transcript Management</a></li>
+                        <li><a href="~/Services/Index">Videograph Procurement</a></li>
+                        <li><a href="~/Services/Index">Interpreter Procurement</a></li>
                     </ul>
                 </li>
-                <li><a href="~/Home/Testimonial">Testimonials</a></li>
                 <li><a href="~/Home/ScheduleDepo">Schedule Depo</a></li>
                 <li><a class="last-child" href="~/Home/ContactUs">Contact Us</a></li>
                 break;
             case "Services":
                 <li><a class="first-child" href="/">Home</a></li>
-                <li><a class="active" href="~/Services/Index">Services</a></li>
-                <li><a href="~/Home/Testimonial">Testimonials</a></li>
-
-                <li><a href="~/Home/ScheduleDepo">Schedule Depo</a></li>
-                <li><a class="last-child" href="~/Home/ContactUs">Contact Us</a></li>
-                break;
-            case "Testimonial":
-                <li><a class="first-child" href="/">Home</a></li>
-                <li><a href="~/Services/Index">Services</a></li>
-                <li><a class="active" href="~/Home/Testimonial">Testimonials</a></li>
+                <li class="has-sub">
+                    <a class="active" href="~/Services/Index">Services</a><i class="down"></i>
+                    <ul>
+                        <li><a href="~/Services/CourtReporting">Court Reporting and Interpreting Services</a></li>
+                        <li><a href="~/Services/Index">Transcript Management</a></li>
+                        <li><a href="~/Services/Index">Videograph Procurement</a></li>
+                        <li><a href="~/Services/Index">Interpreter Procurement</a></li>
+                    </ul>
+                </li>
 
                 <li><a href="~/Home/ScheduleDepo">Schedule Depo</a></li>
                 <li><a class="last-child" href="~/Home/ContactUs">Contact Us</a></li>
@@ -36,22 +36,18 @@
             case "ScheduleDepo":
                 <li><a class="first-child" href="/">Home</a></li>
                 <li><a href="~/Services/Index">Services</a></li>
-                <li><a href="~/Home/Testimonial">Testimonials</a></li>
                 <li><a class="active" href="~/Home/ScheduleDepo">Schedule Depo</a></li>
                 <li><a class="last-child" href="~/Home/ContactUs">Contact Us</a></li>
                 break;
             case "ContactUs":
                 <li><a class="first-child" href="/">Home</a></li>
                 <li><a href="~/Services/Index">Services</a></li>
-                <li><a href="~/Home/Testimonial">Testimonials</a></li>
-
                 <li><a href="~/Home/ScheduleDepo">Schedule Depo</a></li>
                 <li><a class="active last-child" href="~/Home/ContactUs">Contact Us</a></li>
                 break;
             default:
                 <li><a class="first-child" href="/">Home</a></li>
                 <li><a href="~/Services/Index">Services</a></li>
-                <li><a href="~/Home/Testimonial">Testimonials</a></li>
 
                 <li><a href="~/Home/ScheduleDepo">Schedule Depo</a></li>
                 <li><a class="last-child" href="~/Home/ContactUs">Contact Us</a></li>

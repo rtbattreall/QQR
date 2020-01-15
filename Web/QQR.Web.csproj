@@ -139,7 +139,6 @@
     <Compile Include="Controllers\ServicesController.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Testimonials.xml" />
     <Content Include="Content\custom\base.css" />
     <Content Include="Content\custom\grid.css" />
     <Content Include="Content\custom\layout.css" />
@@ -277,12 +276,11 @@
     <Content Include="Views\Home\_Alert.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Home\Testimonial.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

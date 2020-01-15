@@ -33,13 +33,6 @@ namespace LyncStream.QQR.Web.Controllers
         {
             return View();
         }
-
-        public ActionResult Testimonial()
-        {
-            var model = new TestimonialViewModel();
-            return View(model.CreateModel(Server.MapPath("~/App_Data/Testimonials.xml")));
-        }
-
         public ActionResult ScheduleDepo()
         {
             return View(new ScheduleViewModel());
