@@ -1,0 +1,70 @@
+﻿@{
+    ViewBag.Title = "Court Reporting";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section scripts
+{
+    @Scripts.Render("~/Scripts/qqr.services.js")    
+}
+
+@section Navigation
+{
+    @Html.Partial("_Navigation", "Services")
+}
+
+<section class="main interior">
+    <div class="container">
+        <div class="sixteen columns">
+            <h2>Court Reporting</h2>
+            <p>
+                Paragraph 1
+            </p>
+            <p>Paragraph 2</p>
+
+            <div id="accordion">
+                <h3 style="background-color:#bec792;font-weight:bold;border: 0px solid #bec792">Depositions</h3>
+                <div>
+                    <p>Content Goes Here</p>
+                </div>
+                <h3 style="background-color:#bec792;font-weight:bold;border: 0px">Trials</h3>
+                <div>
+                    <p>Content Goes Here</p>
+                </div>
+                <h3 style="background-color:#bec792;font-weight:bold;border: 0px">Hearings</h3>
+                <div>
+                    <p>Content Goes Here</p>
+                </div>
+                <h3 style="background-color:#bec792;font-weight:bold;border: 0px">Arbitrations</h3>
+                <div>
+                    <p>Content Goes Here</p>
+                </div>
+                <h3 style="background-color:#bec792;font-weight:bold;border: 0px">City Council Meetings</h3>
+                <div>
+                    <p>Content Goes Here</p>
+                </div>
+                <h3 style="background-color:#bec792;font-weight:bold;border: 0px">Expert Testimony</h3>
+                <div>
+                    <p>Content Goes Here</p>
+                </div>
+                <h3 style="background-color:#bec792;font-weight:bold;border: 0px">Independent medical examinations (IME)</h3>
+                <div>
+                    <p>Content Goes Here</p>
+                </div>
+                <h3 style="background-color:#bec792;font-weight:bold;border: 0px">Examinations under oath</h3>
+                <div>
+                    <p>Content Goes Here</p>
+                </div>
+                <h3 style="background-color:#bec792;font-weight:bold;border: 0px">Statements on the record</h3>
+                <div>
+                    <p>Content Goes Here</p>
+                </div>
+                <h3 style="background-color:#bec792;font-weight:bold;border: 0px">Prison inmate depositions</h3>
+                <div>
+                    <p>Content Goes Here</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
