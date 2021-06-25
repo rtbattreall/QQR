@@ -31,11 +31,5 @@ namespace LyncStream.QQR.Logic
         {
             return QQRRepository.SelectStates();
         }
-
-        public List<Testimonial> GetTestimonials(string filePath)
-        {
-            var test = QQRRepository.SelectTestimonials(filePath);
-            return QQRRepository.SelectTestimonials(filePath).TestimonialList;
-        }
     }
 }

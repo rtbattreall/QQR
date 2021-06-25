@@ -8,6 +8,5 @@ namespace LyncStream.QQR.DataAccess
         List<KeyValuePair<string, string>> SelectTurnAroundTimes();
         List<KeyValuePair<string, string>> SelectTrialLengths();
         List<KeyValuePair<string, string>> SelectStates();
-        Testimonials SelectTestimonials(string filePath);
     }
 }

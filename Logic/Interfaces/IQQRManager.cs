@@ -8,6 +8,5 @@ namespace LyncStream.QQR.Logic
         List<KeyValuePair<string, string>> GetTurnAroundTimes();
         List<KeyValuePair<string, string>> GetTrialLengths();
         List<KeyValuePair<string, string>> GetStates();
-        List<Testimonial> GetTestimonials(string filePath);
     }
 }

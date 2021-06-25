@@ -34,7 +34,7 @@ namespace LyncStream.QQR.Logic
 
             var mailMessage = new MailMessage
             {
-                From = new MailAddress(fromAddress),
+                From = new MailAddress(Properties.Settings.Default.ContactFromAddress),
                 Subject = Properties.Settings.Default.ContactSubject,
                 Body = string.Format(Properties.Settings.Default.ContactBody, name, companyName, fromAddress, message),
                 IsBodyHtml = true
@@ -60,7 +60,7 @@ namespace LyncStream.QQR.Logic
 
             var mailMessage = new MailMessage()
             {
-                From = new MailAddress(schedule.Email),
+                From = new MailAddress(Properties.Settings.Default.ScheduleFromAddress),
                 Subject = Properties.Settings.Default.ScheduleSubject,
                 IsBodyHtml = true
             };

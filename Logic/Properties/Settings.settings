@@ -40,7 +40,7 @@
 </Value>
     </Setting>
     <Setting Name="ContactToAddress" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">info@quinnsreporting.com</Value>
+      <Value Profile="(Default)">contact@quinnsreporting.com</Value>
     </Setting>
     <Setting Name="ScheduleSubject" Type="System.String" Scope="Application">
       <Value Profile="(Default)">Schedule Request</Value>
@@ -126,7 +126,13 @@
 </Value>
     </Setting>
     <Setting Name="ScheduleToAddress" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">rtbattreall@cox.net</Value>
+      <Value Profile="(Default)">contact@quinnsreporting.com</Value>
+    </Setting>
+    <Setting Name="ContactFromAddress" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">vickie@quinnsreporting.com</Value>
+    </Setting>
+    <Setting Name="ScheduleFromAddress" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">vickie@quinnsreporting.com</Value>
     </Setting>
   </Settings>
 </SettingsFile>

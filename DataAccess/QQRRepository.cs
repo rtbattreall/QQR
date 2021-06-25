@@ -1,7 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.IO;
-using System.Xml.Serialization;
-using LyncStream.QQR.Common;
 
 namespace LyncStream.QQR.DataAccess
 {
@@ -92,15 +89,6 @@ namespace LyncStream.QQR.DataAccess
                 new KeyValuePair<string, string>("Wisconsin", "WI"),
                 new KeyValuePair<string, string>("Wyoming", "WY")                              
             };
-        }
-
-        public Testimonials SelectTestimonials(string filePath)
-        {
-            var serializer = new XmlSerializer(typeof(Testimonials));
-            using (var fileStream = new FileStream(filePath, FileMode.Open))
-            {
-                return (Testimonials)serializer.Deserialize(fileStream);
-            }
         }
     }
 }

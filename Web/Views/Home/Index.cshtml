@@ -3,6 +3,15 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+@section HeadInfo
+{
+    <meta name="viewport" content="width=device-width" />
+    <meta name="keywords" content="omaha, nebraska, court, reporting, court reporting, dictation, litigiation, transcripts" />
+    <meta name="description" content="Court Reporters, Legal Videographers and Trial Services" />
+    <meta name="author" content="SmartLight, INC. - Omaha, Nebraska" />
+    <title>Quinns Reporting - Court Reporters, Legal Videos, and Trial Services - Omaha Nebraska</title>   
+}
+
 @section Navigation
 {
     @Html.Partial("_Navigation", "Home")
@@ -11,6 +20,11 @@
 <section class="main-hero">
     <div class="container">
         <div class="sixteen columns">
+            <div class="announcement">
+                <p>
+                    <b>VALUED CLIENTS</b>:  We have solutions to help you keep up with your deposition workload during these trying times.  Please contact us for further information at <a href="mailto:vickie@quinnsreporting.com">vickie@quinnsreporting.com</a> or call us directly at 402-895-5066
+                </p>
+            </div>
             <div class="hero-image">
                 <div class="hero-text">                    
                     <p>

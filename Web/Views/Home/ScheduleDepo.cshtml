@@ -6,13 +6,21 @@
 }
 
 @section scripts
-{
-    @Scripts.Render("~/Scripts/jquery/jquery-ui-datetimepicker.js")
-    @Scripts.Render("~/Scripts/qqr.schedule.js")
+{    
+    @Scripts.Render("~/Scripts/jquery/jquery-ui-datetimepicker.min.js")
+    @Scripts.Render("~/Scripts/qqr.schedule.min.js")
     @Styles.Render("~/Content/Themes/base/minified/jquery-ui.min.css")
     @Styles.Render("~/Content/Themes/base/minified/jquery.ui.datepicker.min.css")
     @Styles.Render("~/Content/Themes/base/minified/jquery.ui.slider.min.css")
-    @Styles.Render("~/Content/Themes/base/jquery.ui.datetimepicker.css")
+}
+
+@section HeadInfo
+{   
+    <meta name="viewport" content="width=device-width" />
+    <meta name="keywords" content="Deposition, Videographer, Videoconference, Process Server" />
+    <meta name="description" content="Quinns Reporting - Schedule Deposition, Videographer, Videoconference, or Process Server" />
+    <meta name="author" content="SmartLight, INC. - Omaha, Nebraska" />
+    <title>Schedule Depo - Quinns Reporting - Court Reporters, Legal Videos, and Trial Services - Omaha Nebraska</title>
 }
 
 @section Navigation

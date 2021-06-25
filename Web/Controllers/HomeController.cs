@@ -34,12 +34,6 @@ namespace LyncStream.QQR.Web.Controllers
             return View();
         }
 
-        public ActionResult Testimonial()
-        {
-            var model = new TestimonialViewModel();
-            return View(model.CreateModel(Server.MapPath("~/App_Data/Testimonials.xml")));
-        }
-
         public ActionResult ScheduleDepo()
         {
             return View(new ScheduleViewModel());
@@ -109,9 +103,10 @@ namespace LyncStream.QQR.Web.Controllers
                 {
                     MailManager.SendMail(model.CompanyName, model.Name, model.Email, model.Message);
                 }
+                
                 catch(Exception ex)
                 {
-                    model.SystemMessage.Message = ex.Message;                    
+                    model.SystemMessage.Message = ex.InnerException.Message;
                     model.SystemMessage.MessageType = SystemMessageType.Error;
                     return View(model);
                 }

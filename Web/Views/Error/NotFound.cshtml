@@ -1,0 +1,24 @@
+﻿@model System.Web.Mvc.HandleErrorInfo
+
+@{
+    ViewBag.Title = "NotFound";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section HeadInfo
+{
+    <title>NotFound</title>
+}
+
+@section Navigation
+{
+    @Html.Partial("_Navigation", string.Empty)
+}
+
+<section class="main interior">
+    <div class="container">
+        <div class="sixteen columns">
+            Whoops! The page your are trying to visit cannont be found.<br/>                        
+        </div>
+    </div>
+</section>

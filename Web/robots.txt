@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /_db_backups/
+Disallow: /App_Start/
+Disallow: /asp_client/
+Disallow: /bin/
+Disallow: /Content/
+Disallow: /Scripts/
+Disallow: /stats/
+
+Sitemap: http://www.quinnsreporting.com/sitemap.xml

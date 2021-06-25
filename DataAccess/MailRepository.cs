@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Mail;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Net.Mail;
 
 namespace LyncStream.QQR.DataAccess
 {
@@ -15,14 +10,14 @@ namespace LyncStream.QQR.DataAccess
             if (Properties.Settings.Default.UseCredentials)
             {
                 smtpClient = new SmtpClient(Properties.Settings.Default.SmtpServer, Properties.Settings.Default.PortNumber);
-                smtpClient.UseDefaultCredentials = true;
+                smtpClient.UseDefaultCredentials = false;
                 smtpClient.Credentials = new System.Net.NetworkCredential(Properties.Settings.Default.UserName, Properties.Settings.Default.Password);
-                smtpClient.EnableSsl = false;
+                smtpClient.EnableSsl = Properties.Settings.Default.EnableSSL;
                 smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
             }
             else
             {
-                smtpClient = new SmtpClient(Properties.Settings.Default.SmtpServer);
+                smtpClient = new SmtpClient();
             }
 
             smtpClient.Send(mailMessage);
