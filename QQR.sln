@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30128.74
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QQR.Common", "Common\QQR.Common.csproj", "{DCBCB298-2048-472F-86B5-1DDA7CAD9A32}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QQR.DataAccess", "DataAccess\QQR.DataAccess.csproj", "{0C2B4D80-F887-4825-AB3C-1A423F2740C3}"
@@ -34,5 +36,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6762A125-5058-4753-A442-3956D153BEA7}
 	EndGlobalSection
 EndGlobal
